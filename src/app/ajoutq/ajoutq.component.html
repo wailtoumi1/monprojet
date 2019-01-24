@@ -1,0 +1,40 @@
+<script>
+  function ajout() {
+    alert(document.getElementById('nom').value);
+  }
+</script>
+<!--Reply-->
+<div class="card mb-3 wow fadeIn">
+    <div class="card-header font-weight-bold">Créer une question</div>
+    <div class="card-body">
+
+        <!-- Default form reply -->
+        <form>
+
+
+
+            <!-- titre -->
+            <label for="nom">Titre de la question :</label>
+            <input type="text" id="nom" class="form-control">
+
+            <br>
+
+
+            <!-- question -->
+            <div class="form-group">
+                <label for="question">Votre question</label>
+                <textarea class="form-control" id="question" rows="5"></textarea>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-info btn-md"  onclick= "document.getElementById('liste').innerHTML = document.getElementById('liste').innerHTML + ' <li class=\'media\'> <h3><span class=\'badge badge-primary\'>4</span></h3> <i class=\'fas fa-arrow-up mr-2 ml-2\' onclick = \'var wail; wail = document.getElementById(\'titre3\').innerHTML ; document.getElementById(\'titre3\').innerHTML = document.getElementById(\'titre2\').innerHTML; document.getElementById(\'titre2\').innerHTML = wail; var ques ; ques = document.getElementById(\'ques3\').innerHTML ; document.getElementById(\'ques3\').innerHTML = document.getElementById(\'ques2\').innerHTML; document.getElementById(\'ques2\').innerHTML = ques; \' ></i><i class=\'fas fa-arrow-down mr-2\' ></i><div class=\'media-body\'><a href=\'\'><h5 class=\'mt-0 mb-1 font-weight-bold\' id =\'titre4\' >'+document.getElementById('nom').value+'</h5></a><div id = \'ques4\'>'+document.getElementById('question').value+'</div><div><li><br>' ">Post</button>
+            </div>
+        </form>
+        <!-- Default form reply -->
+
+
+
+
+    </div>
+</div>
+
+<!--/.Reply-->
